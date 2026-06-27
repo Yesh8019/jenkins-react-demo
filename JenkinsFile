@@ -5,7 +5,10 @@ pipeline{
     }
     stages{
         stage('Checkout'){
-            echo 'Code pulled from GitHub'
+            steps{
+                echo 'Code pulled from GitHub'
+            }
+            
         }
         stage('Install'){
             steps{
